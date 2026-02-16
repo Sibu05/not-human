@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(bot2.jpeg);
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 350px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff4d4d;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Security Check</h2>
+    <p>Please verify that you are <strong>NOT HUMAN</strong>.</p>
+    <button onclick="verify()">Verify</button>
+    <p id="result"></p>
+</div>
+
+<script>
+    function verify() {
+        document.getElementById("result").innerHTML = 
+            "🤖 Access Granted. Welcome, fellow bot.";
+    }
+
+</script>
+
+</body>
+</html>
